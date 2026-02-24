@@ -39,6 +39,37 @@ npm install
 npm run build
 ```
 
+## 本机全局使用（推荐）
+
+在项目根目录执行：
+
+```bash
+npm install
+npm run build
+npm link
+```
+
+然后你可以在任意目录直接运行：
+
+```bash
+web-grab https://example.com -o ./output
+```
+
+取消全局链接：
+
+```bash
+npm unlink -g ts-afternoon
+```
+
+## 全局安装（发布后）
+
+如果发布到 npm，可直接全局安装：
+
+```bash
+npm install -g ts-afternoon
+web-grab https://example.com -o ./output
+```
+
 ## 使用方式
 
 ```bash

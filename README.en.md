@@ -39,6 +39,37 @@ npm install
 npm run build
 ```
 
+## Use As a Global Command (Recommended)
+
+From the project root:
+
+```bash
+npm install
+npm run build
+npm link
+```
+
+Then run it from anywhere:
+
+```bash
+web-grab https://example.com -o ./output
+```
+
+Remove the global link:
+
+```bash
+npm unlink -g ts-afternoon
+```
+
+## Global Install (After Publishing)
+
+If this package is published to npm:
+
+```bash
+npm install -g ts-afternoon
+web-grab https://example.com -o ./output
+```
+
 ## Usage
 
 ```bash

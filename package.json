@@ -1,15 +1,34 @@
 {
   "name": "ts-afternoon",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "A TypeScript Node.js CLI to fetch and export structured web content.",
+  "main": "dist/index.js",
+  "bin": {
+    "web-grab": "dist/index.js"
   },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js",
+    "test": "echo \"No tests configured\""
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "README.en.md"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "commander": "^11.1.0"
+  },
   "devDependencies": {
     "@types/node": "^25.3.0",
     "typescript": "^5.9.3"
