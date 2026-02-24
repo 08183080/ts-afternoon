@@ -4,6 +4,8 @@ A Node.js + TypeScript command line tool that fetches a webpage URL and exports 
 
 中文文档: [README.md](./README.md)
 
+npm: https://www.npmjs.com/package/ts-afternoon
+
 ## Features
 
 - Fetches webpage HTML (follows redirects)
@@ -61,9 +63,9 @@ Remove the global link:
 npm unlink -g ts-afternoon
 ```
 
-## Global Install (After Publishing)
+## Global Install (npm)
 
-If this package is published to npm:
+This package is published on npm:
 
 ```bash
 npm install -g ts-afternoon

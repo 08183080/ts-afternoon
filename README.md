@@ -4,6 +4,8 @@
 
 English version: [README.en.md](./README.en.md)
 
+npm: https://www.npmjs.com/package/ts-afternoon
+
 ## 功能
 
 - 抓取网页 HTML（自动跟随重定向）
@@ -61,9 +63,9 @@ web-grab https://example.com -o ./output
 npm unlink -g ts-afternoon
 ```
 
-## 全局安装（发布后）
+## 全局安装（npm）
 
-如果发布到 npm，可直接全局安装：
+已发布到 npm，可直接全局安装：
 
 ```bash
 npm install -g ts-afternoon
