@@ -2,6 +2,8 @@
 
 一个基于 Node.js + TypeScript 的命令行工具：输入网页 URL，抓取页面并导出结构化结果到本地目录。
 
+English version: [README.en.md](./README.en.md)
+
 ## 功能
 
 - 抓取网页 HTML（自动跟随重定向）
@@ -90,6 +92,37 @@ npm start -- https://example.com -o output
   {
     "href": "https://example.com/path",
     "text": "链接文本"
+  }
+]
+```
+
+## 示例输出
+
+命令：
+
+```bash
+node dist/index.js https://example.com -o output
+```
+
+`meta.json` 示例：
+
+```json
+{
+  "title": "Example Domain",
+  "url": "https://example.com/",
+  "headings": [
+    { "level": 1, "text": "Example Domain" }
+  ]
+}
+```
+
+`links.json` 示例：
+
+```json
+[
+  {
+    "href": "https://iana.org/domains/example",
+    "text": "Learn more"
   }
 ]
 ```
